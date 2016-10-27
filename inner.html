@@ -3,24 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <header class="page-header"> 
-                <a class="logo" href="#"><img src="http://placehold.it/150x100" alt="логотип" width=150 height=100></a>
+                <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
                     <ul>
-                        <li><a href="#">Информация</a></li>
+                        <li><a href="index.html">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
                         <li><a href="#">Карта штата</a></li>
-                        <li><a href="#">Гостиницы</a></li>
+                        <li><a href="inner.html">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
-    <!--основная часть -->
-            <main>
-                <!-- форма поиска жилья -->
-                <div class="search-block">
+            <!-- форма поиска жилья -->
+            <div class="search-block">
                     <form class="hotel-search" oninput="priceoutput.value=pricecount.value">
                         <fieldset class="search-infrastructure">
                             <legend>Инфраструктура:</legend>
@@ -45,10 +44,12 @@
                             <label for="pricecount">Стоимость в сутки (р):</label>
                             <output name="priceoutput"></output>   
                         </fieldset>
-                        <button type="submit">Показать</button>
+                        <button type="submit" class="btn">Показать</button>
                     </form>
                 </div>
+            <!--основная часть -->
             <!-- сортировка результатов-->
+            <main>
                 <div class="result-sorting">
                     <span class="result-amount">Найдено: 3</span>
                     <div class="sorting">
@@ -59,8 +60,8 @@
                             <a href="#" class="sorting-option">По рейтингу</a>
                         </div>
                         <div class="sorting-dir">
-                            <a href="#" class="sorting-dir--up"><img src="http://strelochka.png" alt="по возрастанию" height="20" width="15"></a>
-                            <a href="#" class="sorting-dir--down"><img src="http://strelochka.png" alt="по убыванию" height="20" width="15"></a>
+                            <a href="#" class="arrow-link"></a>
+                            <a href="#" class="arrow-link-down"></a>
                         </div>
                     </div>
                 </div>
@@ -69,10 +70,10 @@
                 <!-- блок с результатом -->
                     <div class="result">
                         <figure class="result-img">
-                            <img class="result-image" src="http://placehold.it/150x100" alt="фото гостиницы" width=150 height=100>
-                            <h3 class="result-name">Amara Resort &amp; SPA</h3>
+                            <img class="result-image" src="img/hotel-1.jpg" alt="фото гостиницы" width=135 height=90>
                         </figure>
                         <div class="result-info">
+                            <h2 class="result-name">Amara Resort &amp; SPA</h2>
                             <span class="result-type">Гостиница</span>
                             <span class="result-prise">От 3500 Р.</span>
                             <div class="result-action">
@@ -89,18 +90,18 @@
                     </div>
                     <!-- конец блока с результатом -->
                     <div class="result">
-                        <figure class="result-item">
-                            <img class="result-image" src="http://placehold.it/150x100" alt="фото гостиницы" width=150 height=100>
-                            <h3 class="result-name">Desert Quail Inn</h3>
-                            <div class="result-filter">
-                                <span class="result-type">Мотель</span>
-                                <span class="result-prise">От 2000 Р.</span>
-                            </div>
+                        <figure class="result-img">
+                            <img class="result-image" src="img/hotel-2.jpg" alt="фото гостиницы" width=135 height=90>
+                        </figure>
+                        <div class="result-info">
+                            <h2 class="result-name">Desert Quail Inn</h2>
+                            <span class="result-type">Мотель</span>
+                            <span class="result-prise">От 2000 Р.</span>
                             <div class="result-action">
                                 <a class="result-more-btn" href="#">Подробнее</a>
                                 <button class="result-order-btn">Забронировать</button>
                             </div>
-                        </figure>
+                        </div>
                         <div class="result-rating">
                             <!-- звездочки рейтинга? -->
                             <div class="result-rating-stars">
@@ -109,9 +110,11 @@
                         </div>
                     </div>
                     <div class="result">
-                        <figure class="result-item">
-                            <img class="result-image" src="http://placehold.it/150x100" alt="фото гостиницы" width=150 height=100>
-                            <h3 class="result-name">Villas at Poco Diablo</h3>
+                        <figure class="result-img">
+                            <img class="result-image" src="img/hotel-3.jpg" alt="фото гостиницы" width=135 height=90>
+                        </figure>
+                        <div class="result-info">
+                            <h2 class="result-name">Villas at Poco Diablo</h2>
                             <div class="result-filter">
                                 <span class="result-type">Апартаменты</span>
                                 <span class="result-prise">От 4000 Р.</span>
@@ -120,7 +123,7 @@
                                 <a class="result-more-btn" href="#">Подробнее</a>
                                 <button class="result-order-btn">Забронировать</button>
                             </div>
-                        </figure>
+                        </div>
                         <div class="result-rating">
                             <!-- звездочки рейтинга? -->
                             <div class="result-rating-stars">
@@ -141,7 +144,7 @@
                     <a class="social social-yt" href="#">ig</a>
                 </div>
                 <div class="copyright">
-                    Website by <a href="http://htmlacademy.ru/"><img src="http://placehold.it/150x100" alt="HTML Academy" width=150 height=100 class="copyright-image"></a>
+                    Website by <a href="http://htmlacademy.ru/"><img src="img/copyright.png" alt="HTML Academy" width=113 height=39 class="copyright-image"></a>
                 </div>   
             </footer>
         </div>
