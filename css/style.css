@@ -4,6 +4,7 @@ body {
     font-weight: normal;
     line-height: 26px; 
     color: #333333;
+    background-color: f2f2f2;
 }
 
 h1 {
@@ -12,12 +13,146 @@ h1 {
     font-weight: bold;
     line-height: 26px; 
     color: #000000;
+    text-transform: uppercase;
 }
 
 h2 {
+    text-transform: uppercase;
     font-family: "PT Sans", "Arial", serif;
     font-size: 21px;
     font-weight: bold;
     line-height: 21px; 
     color: #000000;
+}
+
+a {
+ text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    width: 138px;
+    margin: auto;
+}
+
+
+
+/*временно покрашено для наглядности*/
+.page-header {
+    width: 100%;
+    background-color: powderblue;
+}
+
+.page-header li {
+    display: inline-block;
+    width: 20%;
+}
+
+
+.top-image {
+    height: 510px;
+    background: url("../img/background.jpg") no-repeat;
+    padding-top: 73px;
+}
+
+.top-image img {
+    display: block;
+    margin: auto;
+}
+
+.top-menu {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.features-head {
+    width: 575px;
+    min-height: 150px;
+    text-align: center;
+    margin: 55px auto;
+}
+
+.features-caption {
+    text-transform: uppercase;
+}
+
+.features-block {
+    margin-top: 50px;
+    color: white;
+}
+
+.features-block h2 {
+    color: white;
+}
+
+.features-text {
+    background-color: #81b3d2;
+    float: left;
+    width: 33%;
+    min-height: 256px;
+
+
+}
+
+.features-img {
+    float: right;
+    width: 66%;
+
+}
+
+.features-block--inverse .features-text {
+    float: right;
+}
+
+.features-block--inverse .features-img {
+    float: left;
+}
+
+.advice {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.advice-item {
+    display: inline-block;
+    width: 33%;
+    min-height: 255px;
+    text-align: center;
+    
+}
+
+.search-text {
+    width: 575px;
+    min-height: 200px;
+    text-align: center;
+    margin-top: 300px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.search-container {
+    width: 575px;
+    min-height: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.features-bottom .features-text {
+    background-color: #eeeeee;
+
+}
+
+.features-number, .features-text {
+    text-align: center;
+}
+
+.features-text p {
+    padding-left: 50px;
+    padding-right: 20px;
+    text-transform: uppercase;
 }

@@ -7,8 +7,8 @@
     </head>
     <body>
         <div class="container">
+            <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
             <header class="page-header"> 
-                <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
                     <ul>
                         <li><a href="#">Информация</a></li>
@@ -25,8 +25,10 @@
                     <img src="img/head-text.png" alt="Welcome to the gorgeous" width=458 height=352>
                 </div> 
                 <div class="features">
-                    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-                    <p class="features-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                    <div class="features-head">
+                        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+                        <p class="features-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                    </div>
                 <!-- блок о преимуществах с картинкой -->
                     <div class="features-block">
                         <div class="features-text">
@@ -61,7 +63,7 @@
                             <h2>Там есть мост дьявола</h2>
                             <span class="features-number">- №2 -</span>
                             <p class="features-description"> 
-                                Да, по нему можно пройти! Если, конечно, вы осмелитесь
+                                Да, по нему можно пройти! Если конечно вы осмелитесь
                             </p>
                         </div>
                         <div class="features-image">
@@ -96,9 +98,11 @@
             </main>
              <!-- форма ввода информации для подбора отелей -->
                 <div class="search">
-                    <span class="search-caption">Заинтересовались?</span>
-                    <p class="search-advice">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                    <button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
+                    <div class="search-text">
+                        <span class="search-caption">Заинтересовались?</span>
+                        <p class="search-advice">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                        <button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
+                    </div>
                     <div class="search-container">
                         <form action="#" method="post">
                             <label for="arrive-date">Дата заезда</label>
