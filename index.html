@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <header class="page-header"> 
-                <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
+               <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
                     <ul>
                         <li><a href="#">Информация</a></li>
@@ -26,20 +27,20 @@
                 </div> 
                 <div class="features">
                     <div class="features-head">
-                        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+                        <h1>Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h1>
                         <p class="features-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                     </div>
                 <!-- блок о преимуществах с картинкой -->
                     <div class="features-block">
                         <div class="features-text">
                             <h2>Настоящий городок</h2>
-                            <span class="features-number">- №1 -</span>
+                            <span class="features-number">&#8212; №1 &#8212;</span>
                             <p class="features-description"> 
-                                Седона - не аттракцион для туристов, там течет своя жизнь!
+                                Седона - не аттракцион для туристов,<br> там течет своя жизнь!
                             </p>
                         </div>
                         <div class="features-image">
-                            <img src="img/photo-1.jpg" alt="Городок Седона" width=800 height=256>
+                            <img src="img/photo-1.jpg" alt="Городок Седона" width="800" height="256">
                         </div>
                     </div>
                 <!-- блок советов с иконками -->
@@ -60,8 +61,8 @@
                 <!-- еще один блок с картинкой -->
                     <div class="features-block features-block--inverse">
                         <div class="features-text">
-                            <h2>Там есть мост дьявола</h2>
-                            <span class="features-number">- №2 -</span>
+                            <h2>Там есть<br> мост дьявола</h2>
+                            <span class="features-number">&#8212; №2 &#8212;</span>
                             <p class="features-description"> 
                                 Да, по нему можно пройти! Если конечно вы осмелитесь
                             </p>
@@ -73,24 +74,24 @@
                 <!-- блок с преимуществами без иконок-->
                     <div class="features-bottom">
                         <div class="features-text">
-                            <h2>Небольшая площадь</h2>
-                                <span class="features-number">- №3 -</span>
+                            <h2 class="bottom-captions">Небольшая площадь</h2>
+                                <span class="features-number">&#8212; №3 &#8212;</span>
                                 <p class="features-description">
                                     Все достопримечательности находятся очень близко
                                 </p>
                         </div>
                         <div class="features-text">
-                            <h2>Красивая дорога</h2>
-                            <span class="features-number">- №4 -</span>
+                            <h2 class="bottom-captions">Красивая<br> дорога</h2>
+                            <span class="features-number">&#8212; №4 &#8212;</span>
                             <p class="features-description">                                
                                Ехать в Седону из Лас-Вегаса совсем не скучно!
                             </p>
                         </div>
                         <div class="features-text">
-                            <h2>Мало туристов</h2>
-                            <span class="features-number">- №5 -</span>
+                            <h2 class="bottom-captions">Мало<br> туристов</h2>
+                            <span class="features-number">&#8212; №5 &#8212;</span>
                             <p class="features-description">                                
-                                Большинство туристов едет в Гранд Каньон и толпится там
+                                Большинство едет в Гранд Каньон и толпится там
                             </p>
                         </div>
                     </div>
@@ -100,27 +101,27 @@
                 <div class="search">
                     <div class="search-text">
                         <span class="search-caption">Заинтересовались?</span>
-                        <p class="search-advice">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                        <p class="search-advice">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                         <button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
                     </div>
-                    <div class="search-container">
-                        <form action="#" method="post">
-                            <label for="arrive-date">Дата заезда</label>
-                            <input type="date" name="arrive-date" id="arrive-date"><br>
-                            <label for="leave-date">Дата выезда</label>
-                            <input type="date" name="leave-date" id="leave-date"><br>
-                            <label for="peple-amount">Взрослые</label>
-                            <input type="number" min="1" step="1" name="peple-amount" id="peple-amount" value="2"><br>
-                            <label for="child-amount">Дети</label>
-                            <input type="number" min="0" step="1" name="child-amount" id="child-amount" value="0"><br>
-                            <button class="filter-btn" type="submit">Найти</button>
-                        </form>
+                                <!-- карта -->
+                    <div class="map">
+                        <div class="search-container">
+                            <form class="search-form" action="#" method="post">
+                                <label for="arrive-date">Дата заезда:</label>
+                                <input type="text" name="arrive-date" id="arrive-date" value="24 апреля 2016"><br>
+                                <label for="leave-date">Дата выезда:</label>
+                                <input type="text" name="leave-date" id="leave-date" value="4 июля 2016"><br>
+                                <label for="peple-amount">Взрослые:</label>
+                                <input type="number" min="1" step="1" name="peple-amount" id="peple-amount" value="2">
+                                <label for="child-amount">Дети:</label>
+                                <input type="number" min="0" step="1" name="child-amount" id="child-amount" value="0"><br>
+                                <button class="filter-btn" type="submit">Найти</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            <!-- карта -->
-            <div class="map">
-                <img src="img/map.jpg" alt="Карта" width=1200 height=473>
-            </div>
+
         <!-- подвал -->
             <footer class="page-footer">
                 <div class="footer-left">
