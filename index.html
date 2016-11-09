@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -12,7 +12,7 @@
                <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
                     <ul>
-                        <li><a href="#">Информация</a></li>
+                        <li><a href="index.html">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
                         <li><a href="#">Карта штата</a></li>
                         <li><a href="inner.html">Гостиницы</a></li>
@@ -28,7 +28,7 @@
                 <div class="features">
                     <div class="features-head">
                         <h1>Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h1>
-                        <p class="features-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                        <p class="block-caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                     </div>
                 <!-- блок о преимуществах с картинкой -->
                     <div class="features-block">
@@ -101,31 +101,30 @@
                 <div class="search">
                     <div class="search-text">
                         <span class="search-caption">Заинтересовались?</span>
-                        <p class="search-advice">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                        <p class="block-caption">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                         <button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
                     </div>
-                                <!-- карта -->
-                    <div class="map">
-                        <div class="search-container">
-                            <form class="search-form" action="#" method="post">
-                                <label for="arrive-date">Дата заезда:</label>
-                                <input type="text" name="arrive-date" id="arrive-date" value="24 апреля 2016"><br>
-                                <label for="leave-date">Дата выезда:</label>
-                                <input type="text" name="leave-date" id="leave-date" value="4 июля 2016"><br>
-                                <label for="peple-amount">Взрослые:</label>
-                                <input type="number" min="1" step="1" name="peple-amount" id="peple-amount" value="2">
-                                <label for="child-amount">Дети:</label>
-                                <input type="number" min="0" step="1" name="child-amount" id="child-amount" value="0"><br>
-                                <button class="filter-btn" type="submit">Найти</button>
-                            </form>
-                        </div>
+                    <div class="search-container">
+                        <form class="search-form" action="#" method="post">
+                            <label for="arrive-date">Дата заезда:</label>
+                            <input type="text" name="arrive-date" id="arrive-date" value="24 апреля 2016"><br>
+                            <label for="leave-date">Дата выезда:</label>
+                            <input type="text" name="leave-date" id="leave-date" value="4 июля 2016"><br>
+                            <label for="peple-amount">Взрослые:</label>
+                            <input type="number" min="1" step="1" name="peple-amount" id="peple-amount" value="2">
+                            <label for="child-amount">Дети:</label>
+                            <input type="number" min="0" step="1" name="child-amount" id="child-amount" value="0"><br>
+                            <button class="filter-btn" type="submit">Найти</button>
+                        </form>
                     </div>
                 </div>
-
+            <!-- карта -->
+            <div class="map">
+            </div>
         <!-- подвал -->
             <footer class="page-footer">
                 <div class="footer-left">
-                    <span class="footer-left-text">#VisitSedona</span>
+                    <span class="footer-hashtag">#VisitSedona</span>
                 </div>
                 <div class="socials">
                     <a class="social social-vk" href="#">vk</a>

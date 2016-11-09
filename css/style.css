@@ -1,34 +1,35 @@
 body {
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
+    color: #000000;
     font-family: "PT Sans", "Arial", serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 26px; 
-    color: #000000;
     text-transform: uppercase;
 }
 
 h1 {
+    color: #000000;
     font-family: "PT Sans", "Arial", serif;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px; 
-    color: #000000;
     text-transform: uppercase;
 }
 
 h2 {
-    text-transform: uppercase;
+    color: #000000;
     font-family: "PT Sans", "Arial", serif;
     font-size: 21px;
     font-weight: bold;
     line-height: 21px; 
-    color: #000000;
+    text-transform: uppercase;
 }
 
 a {
+    color: #000000;
     text-decoration: none;
 }
 
@@ -37,6 +38,7 @@ a:visited {
 } 
 
 .container {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
     background-color: white;  
@@ -44,44 +46,35 @@ a:visited {
 }
 
 .page-header {
-    width: 100%;
     background-color: white;
     font-size: 0;
 }
 
-.top-menu ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+.top-menu {
+    padding-left: 6%;
+    padding-right: 6%;    
 }
 
-.top-menu {
-    padding-left: 72px;
-    padding-right: 72px;    
+.top-menu ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
 }
 
 .top-menu li {
     width: 20%;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
     padding-top: 14px;
     padding-bottom: 16px;
-    margin-right: 100px;
-    margin-left: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+
 }
 
-.top-menu li:first-child {
-    margin-left: 0;   
-    padding-left: 0;
-}
-
-
-.top-menu li:last-child {
-    margin-right: 0;
-    padding-right: 0;
+.top-menu li:nth-child(3), .top-menu li:last-child {
+    text-align: right;
 }
 
 .logo {
@@ -91,35 +84,32 @@ a:visited {
 }
 
 .top-image {
-    height: 507px;
-    background-image: url("../img/img-bottom.png"), url("../img/background.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 50% 100%, 50% 0;
-    padding-top: 1px;
+    height: 433px;
+    padding-top: 75px;
+    background: 
+        url("../img/img-bottom.png") no-repeat 50% 100%, 
+        url("../img/background.jpg") no-repeat 50% 0;
 }
-
 
 .top-image img {
     display: block;
     margin: auto;
-    margin-top: 75px;
 }
-
 
 
 .features-head {
     width: 575px;
-    text-align: center;
     margin-top: 0;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding-top: 46px;
     padding-bottom: 37px;
+    text-align: center;
 }
 
-.features-caption {
-    text-transform: uppercase;
+.block-caption {
     padding-top: 13px;
+    text-transform: uppercase;
 }
 
 .features-block h2 {
@@ -127,37 +117,30 @@ a:visited {
 }
 
 .features-block {
+    min-height: 256px;
     display: flex;
-    justify-content: space-between;
-    background-color: #81b3d2;
-    margin: 0;
-    padding: 0;
     color: white;
     line-height: 0;
-    min-height: 256px;
+    background-color: #81b3d2;
 }
 
 
 .features-text {
-    line-height: 26px;
+    width: 33.33%;
     display: flex;
-    padding: 0;
     flex-direction: column;
     justify-content: center;
-    width: 33,33%;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    line-height: 26px;
 }
 
 .features-text h2 {
-    padding-top: 5px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.features-description {
-    padding-top: 5px;
-    text-transform: uppercase;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 25px;
 }
 
 .features-number, .features-text {
@@ -165,43 +148,53 @@ a:visited {
 }
 
 .features-img {
+    width: 66.67%;
     margin: 0;
     padding: 0;
-    width: 66,67%;
-
 }
 
 .features-block--inverse {
     flex-direction: row-reverse;
 }
 
+
 .advice {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
     font-size: 0;
-    min-height: 330px;
 }
 
 .advice-item {
-    width: 33,33%;
-    text-align: center;
+    width: 33.33%;
+    padding: 60px;
+    padding-bottom: 85px;
     font-size: 14px;
+    text-align: center;
 }
 
+.advice-item--house {
+    background: url("../img/house-icon.png") no-repeat center;
+}
+
+.advice-item--hamburger {
+    background: url("../img/hamburger-icon.png") no-repeat center;
+}
+
+.advice-item--gift {
+    background: url("../img/gift-icon.png") no-repeat center;
+}
 
 .features-bottom {
+    min-height: 256px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #eeeeee;
-    color: #000000;
-    line-height: 0;
-    width: 100%;
     margin: 0;
     padding-top: 0;
-    min-height: 256px;
-
+    color: #000000;
+    line-height: 0;
+    background-color: #eeeeee;
 }
 
 .features-bottom .features-text {
@@ -237,13 +230,9 @@ a:visited {
     font-weight: bold;
 }
 
-.search-advice {
-    padding-top: 9px;
-    margin-bottom: 45px;
-}
-
 .search-btn {
     width: 570px;
+    padding: 30px;
     border: none;
     font-family: "PT Sans", "Arial", serif;
     font-size: 21px;
@@ -251,38 +240,35 @@ a:visited {
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    padding: 30px;
-    background-color: #766357;
     color: #ffffff;
-
+    background-color: #766357;
 }
 
 .map {
     width: 100%;
-    height: 473px;
-    background: url('../img/map.jpg') no-repeat;
+    height: 594px;
+    background: url('../img/map.jpg') no-repeat center bottom;
 }
 
 .search-container {
+    position: absolute;
+    left: 317px;
     width: 570px;
     min-height: 393px;
-    background-color: #ffffff;
     padding: 0;
-    margin: 0 auto;
+    background-color: #ffffff;
     box-shadow: -7px 7px 15px 0 rgba(0, 0, 0, 0.15);
-
 }
 
 .search-form input {
     height: 26px;
+    padding: 5px 15px;
     margin: 15px 0;
     font-family: "PT Sans", "Arial", serif;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
-    padding: 5px 15px;
     text-transform: uppercase;
-    
 }
 
 .search-form {
@@ -294,38 +280,239 @@ a:visited {
 
 input[type="text"] {
     width: 315px;
-    background-color: #f2f2f2;
-    border: none;
     margin-left: 15px;
+    border: none;
+    background-color: #f2f2f2;
 }
+    
 .search-form label {
     margin: 0;
     padding: 0;
 }
+    
 input[type="number"] {
     width: 60px;
-    background-color: #f2f2f2;
-    border: none;
     margin: 15px 32px;
+    border: none;
     text-align: center;
+    background-color: #f2f2f2;
 }
 
 .filter-btn {
     width: 457px;
-    line-height: 26px;
-    background-color: #81b3d2;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: bold;
-    border: none;
     padding: 16px 0;
     margin: 43px auto 0 auto;
+    border: none;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+    background-color: #81b3d2;
 }
 
 .page-footer {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
-    padding: 0;
+    margin-top: -121px;
+    padding: 41px 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px; 
+}
+
+.copyright img {
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+
+
+/*внутренняя страница*/
+.container-inner-page {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.search-block {
+    min-height: 188px;
+    margin: 0;
+    padding: 30px 73px;
+    padding-bottom: 0;
+    background: url("../img/inner-bg.jpg") no-repeat 0 -55px;
+}
+/*форма поиска*/
+ .hotel-search {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+ }
+.search-infrastructure {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-housing {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*фильтр по ценовому диапазону*/
+.search-price {
+    margin-left: 200px;
+    width: 330px;
+
+}
+
+.search-price-title {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 9px;
+    font-weight: bold;
+
+}
+/*поля со значениями*/
+.range-control {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0;
+}
+
+/*разделитель между полями со значениями*/
+.range-control::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 22px;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.range-control label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.range-control .min-price,
+.range-control .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.range-control input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+/* шкала с ползунками*/
+.range-scale {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.range-scale .scale {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-scale .scale-bar {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+/*ползунки*/
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.range-toggle:hover {
+    background-color: #1c4f80;
+}
+
+/*прозрачная кнопка*/
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 34px;
+    border: 2px solid #ffffff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    background: none;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+/*результаты поиска*/
+.result-sorting {
+    position: relative;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sorting-filter {
+    width: 680px;
     display: flex;
     justify-content: space-around;
+}
+
+
+
+
+/*временный квадратик вместо стрелочек*/
+.sorting-dir {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #81b3d2;
+}
+
+
+/*чтобы футер не выползал вверх*/
+.result-content {
+    margin-bottom: 121px;
 }

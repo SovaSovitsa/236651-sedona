@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div class="container container-inner-page">
             <header class="page-header"> 
                 <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
@@ -23,48 +24,69 @@
                     <form class="hotel-search" oninput="priceoutput.value=pricecount.value">
                         <fieldset class="search-infrastructure">
                             <legend>Инфраструктура:</legend>
-                            <input type="checkbox" name="swim" id="swim" checked>
-                            <label for="swim">Бассейн</label>
-                            <input type="checkbox" name="parking" id="parking">
-                            <label for="parking">Парковка</label>
-                            <input type="checkbox" name="wifi" id="wifi">
-                            <label for="wifi">Wi-Fi</label>
+                            <label>
+                                <input type="checkbox" name="swim" id="swim" checked>Бассейн
+                            </label>
+                            <label>
+                                <input type="checkbox" name="parking" id="parking">Парковка
+                            </label>
+                            <label>
+                                <input type="checkbox" name="wifi" id="wifi">Wi-Fi
+                            </label>
                         </fieldset>
                         <fieldset class="search-housing">
                             <legend>Тип жилья:</legend>
-                            <input type="checkbox" name="hotel" id="hotel" checked>
-                            <label for="hotel">Гостиница</label>
-                            <input type="checkbox" name="motel" id="motel" checked>
-                            <label for="motel">Мотель</label>
-                            <input type="checkbox" name="apartments" id="apartments" checked>
-                            <label for="apartments">Апартаменты</label>
+                            <label>
+                                <input type="checkbox" name="hotel" id="hotel" checked>Гостиница
+                            </label>
+                            <label>
+                                <input type="checkbox" name="motel" id="motel" checked>Мотель
+                            </label>                        
+                            <label>
+                                <input type="checkbox" name="apartments" id="apartments" checked>Апартаменты
+                            </label>
                         </fieldset>
-                        <fieldset class="search-price">
-                            <input type="range" name="pricecount" id="pricecount" min="0" max="5000" step="100" value="3000">
-                            <label for="pricecount">Стоимость в сутки (р):</label>
-                            <output name="priceoutput"></output>   
-                        </fieldset>
-                        <button type="submit" class="btn">Показать</button>
+                        <div class="search-price">
+                            <div class="search-price-title">
+                                Стоимость в сутки (р):
+                            </div>
+                            <div class="range-control">
+                                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="range-scale">
+                                <!-- шкала -->
+                                <div class="scale">
+                                    <div class="scale-bar">
+                                    </div>
+                                </div>
+                                <!-- ползунки -->
+                                <div class="range-toggle range-toggle-min">
+                                </div>
+                                <div class="range-toggle range-toggle-max">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-transparent">Показать</button> 
+                        </div>
                     </form>
                 </div>
             <!--основная часть -->
             <!-- сортировка результатов-->
             <main>
                 <div class="result-sorting">
-                    <span class="result-amount">Найдено: 3</span>
-                    <div class="sorting">
+                    <div class="sorting-filter">
+                        <span class="result-amount">Найдено: 3</span>
                         <span class="sorting-title">Сортировка:</span>
-                        <div class="sorting-type">
-                            <a href="#" class="sorting-option">По цене</a>
-                            <a href="#" class="sorting-option">По типу</a>
-                            <a href="#" class="sorting-option">По рейтингу</a>
-                        </div>
-                        <div class="sorting-dir">
-                            <a href="#" class="arrow-link"></a>
-                            <a href="#" class="arrow-link-down"></a>
-                        </div>
+                        <a href="#" class="sorting-option">По цене</a>
+                        <a href="#" class="sorting-option">По типу</a>
+                        <a href="#" class="sorting-option">По рейтингу</a>
+                    </div>
+                    <div class="sorting-dir">
+                        <a href="#" class="arrow-link"></a>
+                        <a href="#" class="arrow-link-down"></a>
                     </div>
                 </div>
+                
             <!-- результаты -->
                 <div class="result-content">
                 <!-- блок с результатом -->
@@ -133,10 +155,10 @@
                     </div> 
                 </div>
             </main>
-        <!-- подвал -->
+       <!-- подвал -->
             <footer class="page-footer">
                 <div class="footer-left">
-                    <span class="footer-left-text">#VisitSedona</span>
+                    <span class="footer-hashtag">#VisitSedona</span>
                 </div>
                 <div class="socials">
                     <a class="social social-vk" href="#">vk</a>
