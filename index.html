@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -12,7 +12,7 @@
                <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
                     <ul>
-                        <li><a href="index.html">Информация</a></li>
+                        <li><a href="#">Информация</a></li>
                         <li><a href="#">Фото и видео</a></li>
                         <li><a href="#">Карта штата</a></li>
                         <li><a href="inner.html">Гостиницы</a></li>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="advice-item advice-item--hamburger">
                             <h2>Еда</h2>
-                            <p class="advice-item-description">Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
+                            <p class="advice-item-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </div>
                         <div class="advice-item advice-item--gift">
                             <h2>Сувениры</h2>
@@ -106,14 +106,36 @@
                     </div>
                     <div class="search-container">
                         <form class="search-form" action="#" method="post">
-                            <label for="arrive-date">Дата заезда:</label>
-                            <input type="text" name="arrive-date" id="arrive-date" value="24 апреля 2016"><br>
-                            <label for="leave-date">Дата выезда:</label>
-                            <input type="text" name="leave-date" id="leave-date" value="4 июля 2016"><br>
-                            <label for="peple-amount">Взрослые:</label>
-                            <input type="number" min="1" step="1" name="peple-amount" id="peple-amount" value="2">
-                            <label for="child-amount">Дети:</label>
-                            <input type="number" min="0" step="1" name="child-amount" id="child-amount" value="0"><br>
+                            <div class="arrive-block">
+                                <label>
+                                    <span>Дата заезда:</span>
+                                    <input type="text" name="arrive-date" id="arrive-date" value="24 апреля 2016">
+                                </label>
+                            </div>
+                            <div class="leave-block">
+                                <label>
+                                    <span>Дата выезда:</span>
+                                    <input type="text" name="leave-date" id="leave-date" value="4 июля 2016">
+                                </label>                        
+                            </div>
+                            <div class="people-block"> 
+                                <label>
+                                    <span>Взрослые:</span>
+                                    <div class="amount-block">
+                                        <div class="amount-arrow amount--up"></div>
+                                        <input type="text" name="peple-amount" id="peple-amount" value="2">
+                                        <div class="amount-arrow amount--down"></div>
+                                    </div>
+                                </label>
+                                <label>
+                                    <span>Дети:</span>
+                                    <div class="amount-block">
+                                        <div class="amount-arrow amount--up"></div>
+                                        <input type="text" min="0" step="1" name="child-amount" id="child-amount" value="0">
+                                        <div class="amount-arrow amount--down"></div>
+                                    </div>
+                                </label>
+                            </div>                                                  
                             <button class="filter-btn" type="submit">Найти</button>
                         </form>
                     </div>

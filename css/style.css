@@ -77,6 +77,11 @@ a:visited {
     text-align: right;
 }
 
+
+.top-menu li:nth-child(2) {
+    padding-right: 11%;
+}
+
 .logo {
     position: absolute;
     left: 50%;
@@ -143,6 +148,11 @@ a:visited {
     margin-bottom: 25px;
 }
 
+.features-bottom h2 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .features-number, .features-text {
     text-align: center;
 }
@@ -167,22 +177,52 @@ a:visited {
 
 .advice-item {
     width: 33.33%;
-    padding: 60px;
-    padding-bottom: 85px;
+    padding-bottom: 64px;
     font-size: 14px;
     text-align: center;
 }
 
-.advice-item--house {
+.advice-item-description {
+    padding: 6px 72px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.advice-item--house::before {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 75px;
+    margin: 58px 157px 28px 157px;
     background: url("../img/house-icon.png") no-repeat center;
 }
 
-.advice-item--hamburger {
+.advice-item--hamburger::before {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 75px;
+    margin: 58px 157px 28px 157px;
     background: url("../img/hamburger-icon.png") no-repeat center;
 }
 
-.advice-item--gift {
+.advice-item--hamburger .advice-item-description {
+    padding-right: 57px;
+    padding-left: 57px;
+}
+
+.advice-item--gift::before {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 75px;
+    margin: 58px 157px 28px 157px;
     background: url("../img/gift-icon.png") no-repeat center;
+}
+
+.advice-item--gift .advice-item-description {
+    padding-right: 64px;
+    padding-left: 64px;
 }
 
 .features-bottom {
@@ -224,6 +264,12 @@ a:visited {
     margin-left: auto;
 }
 
+.search-text p {
+    padding-top: 10px;
+    padding-bottom: 33px;
+    line-height: 24px;
+}
+
 .search-caption {
     line-height: 24px;
     font-size: 30px;
@@ -252,12 +298,19 @@ a:visited {
 
 .search-container {
     position: absolute;
-    left: 317px;
+    left: 315px;
     width: 570px;
     min-height: 393px;
     padding: 0;
     background-color: #ffffff;
     box-shadow: -7px 7px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.search-form {
+    padding: 40px 57px;
+    font-weight: bold;
+    line-height: 26px;
+
 }
 
 .search-form input {
@@ -271,12 +324,6 @@ a:visited {
     text-transform: uppercase;
 }
 
-.search-form {
-    padding: 40px 57px;
-    font-weight: bold;
-    line-height: 26px;
-
-}
 
 input[type="text"] {
     width: 315px;
@@ -289,14 +336,41 @@ input[type="text"] {
     margin: 0;
     padding: 0;
 }
-    
-input[type="number"] {
-    width: 60px;
-    margin: 15px 32px;
+
+.search-form span {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/*мракобесие*/
+.people-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.people-block label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-block input {
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
     border: none;
     text-align: center;
     background-color: #f2f2f2;
 }
+
+.people-block input:last-child {
+    margin-right: 0;
+}
+/**/
 
 .filter-btn {
     width: 457px;
@@ -311,6 +385,7 @@ input[type="number"] {
     background-color: #81b3d2;
 }
 
+
 .page-footer {
     display: flex;
     justify-content: space-between;
@@ -320,10 +395,14 @@ input[type="number"] {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+.footer-left {
+    padding-left: 30px;
+
+}
 .footer-hashtag {
     font-size: 21px;
     font-weight: bold;
-    line-height: 26px; 
+
 }
 
 .copyright img {
@@ -334,15 +413,17 @@ input[type="number"] {
 
 
 /*внутренняя страница*/
-.inner-page {
-    padding-left: 6%;
-    padding-right: 6%;
+
+.result-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 121px;
 }
 
 .search-block {
     min-height: 188px;
     margin: 0;
-    padding: 30px 73px;
+    padding: 25px 73px;
     padding-bottom: 0;
     background: url("../img/inner-bg.jpg") no-repeat 0 -55px;
 }
@@ -352,10 +433,15 @@ input[type="number"] {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-bottom: 15px;
+}
 
- }
+.hotel-search h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 .search-infrastructure {
-    width: 240px;
+    width: 255px;
     display: flex;
     flex-direction: column;
 }
@@ -366,24 +452,59 @@ input[type="number"] {
     flex-direction: column;
 }
 
+
+input[type="checkbox"] {
+    display: none;
+} 
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding: 0 0 0 40px;
+    margin-bottom: 20px;
+}
+
+.checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    width: 17px;
+    height: 17px;
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.checkbox:checked + label::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    background: url("../img/checked.png") no-repeat -3px -2px;
+    overflow: visible;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
 /*фильтр по ценовому диапазону*/
 .search-price {
-    margin-left: 200px;
-    width: 330px;
+    margin-left: auto;
+    width: 318px;
 
 }
 
 .search-price-title {
     font-size: 16px;
     line-height: 21px;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     font-weight: bold;
 
 }
 /*поля со значениями*/
 .range-control {
     position: relative;
-    height: 36px;
+    height: 32px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -405,8 +526,8 @@ input[type="number"] {
 .range-control label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
+    line-height: 30px;
+    vertical-align: middle;
     cursor: pointer;
 }
 
@@ -428,7 +549,7 @@ input[type="number"] {
 /* шкала с ползунками*/
 .range-scale {
     position: relative;
-    margin-bottom: 22px;
+    margin-bottom: 33px;
 }
 
 .range-scale .scale {
@@ -487,32 +608,122 @@ input[type="number"] {
 
 /*результаты поиска*/
 .result-sorting {
-    position: relative;
-    padding: 30px 0;
-    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    padding: 26px 6%;
 }
 
 .sorting-filter {
     width: 680px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
+.sorting-title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    
+}
+.sorting-title {
+    margin-left: 47px;
+}
 
+.sorting-option  {
+    margin-left: 38px;
+}
 
+a.sorting-option {
+    font-size: 12px;
+    line-height: 18px;
+    color: #cacaca;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+a.sorting-option--selected {
+    color: #81b3d2;
+    border: none;
+}
+.result-amount {
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 26px;
+    
+}
 
 /*временный квадратик вместо стрелочек*/
 .sorting-dir {
-    position: absolute;
-    top: 50%;
-    right: 0;
+    margin-left: auto;
     width: 10px;
     height: 10px;
     background-color: #81b3d2;
 }
 
+/*блок с результатами*/
+.result {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.result:last-child {
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.result-block {
+    width: 530px;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.result-img {
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.result-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.result-action {
+    margin-top: 14px;
+}
+
+.result-more-btn {
+    padding: 5px 17px;
+    margin-right: 3px;
+    background-color: #81b3d2;
+}
+
+a.result-more-btn {
+    color: #ffffff;
+}
+
+.result-order-btn {
+    padding: 5px 17px;
+    border: none;
+    background-color: #766357;
+}
+
+a.result-order-btn {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.result-rating {
+    margin-left: auto;
+    padding-right: 6%;
+}
+
+
+
 
 /*чтобы футер не выползал вверх*/
-.result-content {
-    margin-bottom: 121px;
-}
