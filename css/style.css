@@ -79,7 +79,7 @@ a:visited {
 
 
 .top-menu li:nth-child(2) {
-    padding-right: 11%;
+    margin-right: 11%;
 }
 
 .logo {
@@ -132,10 +132,7 @@ a:visited {
 
 .features-text {
     width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 5px;
+    padding-top: 35px;
     padding-bottom: 0;
     padding-right: 40px;
     padding-left: 40px;
@@ -242,7 +239,6 @@ a:visited {
     line-height: 26px;
     display: flex;
     padding: 0;
-    margin-top: -10px;
     flex-direction: column;
     justify-content: center;
 }
@@ -421,7 +417,6 @@ input[type="text"] {
 }
 
 .search-block {
-    min-height: 188px;
     margin: 0;
     padding: 25px 73px;
     padding-bottom: 0;
@@ -665,6 +660,8 @@ a.sorting-option--selected {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 0;
+    padding-left: 6%;
+    padding-right: 6%;
     margin-bottom: 20px;
     border-top: 1px solid #e5e5e5;
 }
@@ -677,8 +674,7 @@ a.sorting-option--selected {
 
 .result-block {
     width: 530px;
-    padding-left: 6%;
-    padding-right: 6%;
+
     display: flex;
     justify-content: flex-start;
 }
@@ -720,7 +716,7 @@ a.result-order-btn {
 }
 .result-rating {
     margin-left: auto;
-    padding-right: 6%;
+
 }
 
 
