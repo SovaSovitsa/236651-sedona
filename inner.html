@@ -12,10 +12,10 @@
                 <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
                     <ul>
-                        <li><a href="#">Информация</a></li>
-                        <li><a href="#">Фото и видео</a></li>
-                        <li><a href="#">Карта штата</a></li>
-                        <li><a href="inner.html">Гостиницы</a></li>
+                        <li><a class="menu-link" href="#">Информация</a></li>
+                        <li><a class="menu-link" href="#">Фото и видео</a></li>
+                        <li><a class="menu-link" href="#">Карта штата</a></li>
+                        <li><a class="menu-link menu-link--current" href="inner.html">Гостиницы</a></li>
                     </ul>
                 </nav>
             </header>
@@ -70,14 +70,18 @@
                 <div class="result-sorting">
                     <div class="sorting-filter">
                         <span class="result-amount">Найдено: 3</span>
-                        <span class="sorting-title">Сортировка:</span>
-                        <a href="#" class="sorting-option sorting-option--selected">По цене</a>
-                        <a href="#" class="sorting-option">По типу</a>
-                        <a href="#" class="sorting-option">По рейтингу</a>
+                        <div class="sorting">
+                            <span class="sorting-title">Сортировка:</span>
+                            <div class="sorting-types">
+                                <a href="#" class="sorting-option sorting-option--current">По цене</a>
+                                <a href="#" class="sorting-option">По типу</a>
+                                <a href="#" class="sorting-option">По рейтингу</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="sorting-dir">
-                        <a href="#" class="arrow-link"></a>
-                        <a href="#" class="arrow-link-down"></a>
+                        <a href="#" class="arrow-link arrow-link--up"></a>
+                        <a href="#" class="arrow-link arrow-link--down arrow-active"></a>
                     </div>
                 </div>
                 
@@ -90,9 +94,11 @@
                                 <img class="result-image" src="img/hotel-1.jpg" alt="фото гостиницы" width=135 height=90>
                             </figure>
                             <div class="result-info">
-                                <h2 class="result-name">Amara Resort &amp; SPA</h2>
-                                <span class="result-type">Гостиница</span>
-                                <span class="result-prise">От 3500 Р.</span>
+                                <a href="#" class="result-name">Amara Resort &amp; SPA<br></a>
+                                <div class="result-description">
+                                    <span class="result-type">Гостиница</span>
+                                    <span class="result-price">От 3500 Р.</span>
+                                </div>
                                 <div class="result-action">
                                     <a class="result-more-btn" href="#">Подробнее</a>
                                     <a class="result-order-btn">Забронировать</a>
@@ -113,9 +119,9 @@
                                 <img class="result-image" src="img/hotel-2.jpg" alt="фото гостиницы" width=135 height=90>
                             </figure>
                             <div class="result-info">
-                                <h2 class="result-name">Desert Quail Inn</h2>
+                                <a href="#" class="result-name">Desert Quail Inn <br></a>
                                 <span class="result-type">Мотель</span>
-                                <span class="result-prise">От 2000 Р.</span>
+                                <span class="result-price">От 2000 Р.</span>
                                 <div class="result-action">
                                     <a class="result-more-btn" href="#">Подробнее</a>
                                     <a class="result-order-btn">Забронировать</a>
@@ -124,7 +130,7 @@
                         </div>
                         <div class="result-rating">
                             <!-- звездочки рейтинга? -->
-                                <div class="result-rating-stars">
+                                <div class="result-rating-stars rating-stars--two">
                                 </div>
                                 <span class="result-rating-text">Рейтинг: 8,9</span>
                         </div>
@@ -135,10 +141,10 @@
                                 <img class="result-image" src="img/hotel-3.jpg" alt="фото гостиницы" width=135 height=90>
                             </figure>
                             <div class="result-info">
-                                <h2 class="result-name">Villas at Poco Diablo</h2>
+                                <a href="#" class="result-name">Villas at Poco Diablo<br></a>
                                 <div class="result-filter">
                                     <span class="result-type">Апартаменты</span>
-                                    <span class="result-prise">От 4000 Р.</span>
+                                    <span class="result-price">От 4000 Р.</span>
                                 </div>
                                 <div class="result-action">
                                     <a class="result-more-btn" href="#">Подробнее</a>
@@ -148,7 +154,7 @@
                         </div>
                         <div class="result-rating">
                             <!-- звездочки рейтинга? -->
-                            <div class="result-rating-stars">
+                            <div class="result-rating-stars rating-stars--three">
                             </div>
                             <span class="result-rating-text">Рейтинг: 9,2</span>
                         </div>
@@ -161,12 +167,12 @@
                     <span class="footer-hashtag">#VisitSedona</span>
                 </div>
                 <div class="socials">
-                    <a class="social social-vk" href="#">vk</a>
-                    <a class="social social-fb" href="#">fb</a>
-                    <a class="social social-yt" href="#">ig</a>
+                    <a class="social social-tw" href="#"></a>
+                    <a class="social social-fb" href="#"></a>
+                    <a class="social social-yt" href="#"></a>
                 </div>
                 <div class="copyright">
-                    Website by <a href="http://htmlacademy.ru/"><img src="img/copyright.png" alt="HTML Academy" width=113 height=39 class="copyright-image"></a>
+                    <span class="copyright-text">Website by</span><a href="http://htmlacademy.ru/" class="copyright-image"></a>
                 </div>
             </footer>
         </div>

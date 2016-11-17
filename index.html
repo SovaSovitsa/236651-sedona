@@ -12,10 +12,10 @@
                <a class="logo" href="index.html"><img src="img/logo.png" alt="логотип" width=138 height=70></a>
                 <nav class="top-menu">
                     <ul>
-                        <li><a href="#">Информация</a></li>
-                        <li><a href="#">Фото и видео</a></li>
-                        <li><a href="#">Карта штата</a></li>
-                        <li><a href="inner.html">Гостиницы</a></li>
+                        <li><a class="menu-link" href="#">Информация</a></li>
+                        <li><a class="menu-link" href="#">Фото и видео</a></li>
+                        <li><a class="menu-link" href="#">Карта штата</a></li>
+                        <li><a class="menu-link" href="inner.html">Гостиницы</a></li>
                     </ul>
                 </nav>           
             </header>
@@ -106,36 +106,36 @@
                     </div>
                     <div class="search-container">
                         <form class="search-form" action="#" method="post">
-                            <div class="arrive-block">
-                                <label>
-                                    <span>Дата заезда:</span>
+                            <div class="form-block">
+                                <label class="form-label" for="arrive-date">Дата заезда:</label>
+                                <div class="form-input">
                                     <input type="text" name="arrive-date" id="arrive-date" value="24 апреля 2016">
-                                </label>
+                                    <span class="form-control form-control--calendar"> </span>
+                                </div>
                             </div>
-                            <div class="leave-block">
-                                <label>
-                                    <span>Дата выезда:</span>
+                            <div class="form-block">
+                                <label class="form-label" for="leave-date">Дата выезда:</label>
+                                <div class="form-input">
                                     <input type="text" name="leave-date" id="leave-date" value="4 июля 2016">
-                                </label>                        
+                                    <span class="form-control form-control--calendar"> </span>
+                                </div>
                             </div>
-                            <div class="people-block"> 
-                                <label>
-                                    <span>Взрослые:</span>
-                                    <div class="amount-block">
-                                        <div class="amount-arrow amount--up"></div>
-                                        <input type="text" name="peple-amount" id="peple-amount" value="2">
-                                        <div class="amount-arrow amount--down"></div>
-                                    </div>
-                                </label>
-                                <label>
-                                    <span>Дети:</span>
-                                    <div class="amount-block">
-                                        <div class="amount-arrow amount--up"></div>
-                                        <input type="text" min="0" step="1" name="child-amount" id="child-amount" value="0">
-                                        <div class="amount-arrow amount--down"></div>
-                                    </div>
-                                </label>
-                            </div>                                                  
+                            <div class="form-block form-block--half">
+                                <label class="form-label" for="peple-amount">Взрослые:</label>
+                                <div class="form-input">
+                                    <input type="text" name="peple-amount" id="peple-amount" value="2">
+                                    <span class="form-control form-control--minus"></span>
+                                    <span class="form-control form-control--plus"></span>
+                                </div>
+                            </div>
+                            <div class="form-block form-block--half">
+                                <label class="form-label" for="child-amount">Дети:</label>
+                                <div class="form-input">
+                                    <input type="text" name="child-amount" id="child-amount" value="0">
+                                    <span class="form-control form-control--minus"></span>
+                                    <span class="form-control form-control--plus"></span>
+                                </div>
+                            </div>
                             <button class="filter-btn" type="submit">Найти</button>
                         </form>
                     </div>
@@ -149,12 +149,12 @@
                     <span class="footer-hashtag">#VisitSedona</span>
                 </div>
                 <div class="socials">
-                    <a class="social social-vk" href="#">vk</a>
-                    <a class="social social-fb" href="#">fb</a>
-                    <a class="social social-yt" href="#">ig</a>
+                    <a class="social social-tw" href="#"></a>
+                    <a class="social social-fb" href="#"></a>
+                    <a class="social social-yt" href="#"></a>
                 </div>
                 <div class="copyright">
-                    Website by <a href="http://htmlacademy.ru/"><img src="img/copyright.png" alt="HTML Academy" width=113 height=39 class="copyright-image"></a>
+                    <span class="copyright-text">Website by</span><a href="http://htmlacademy.ru/" class="copyright-image"></a>
                 </div>
             </footer>
         </div>
