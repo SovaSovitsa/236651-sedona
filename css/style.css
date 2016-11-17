@@ -336,9 +336,14 @@ a.menu-link--current:active {
 }
 
 .form-block {
-    width: 100%;
     margin-bottom: 28px;
     height: 40px;
+}
+
+.form-block::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .form-block--half {
