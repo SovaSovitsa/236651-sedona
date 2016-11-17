@@ -795,18 +795,13 @@ input[type="checkbox"] + label {
 }
 
 
-a.sorting-option:link {
+a.sorting-option {
     margin-left: 40px;
     font-size: 12px;
     line-height: 18px;
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
 
-}
-
-a.sorting-option {
-    color: #bcbcbc;
-    border-bottom: 1px dotted #81b3d2;
 }
 
 a.sorting-option:hover {
