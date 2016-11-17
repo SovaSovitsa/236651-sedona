@@ -329,6 +329,10 @@ a.menu-link--current:active {
     box-shadow: -7px 7px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
+.search-modal {
+    display: none;
+}
+
 .search-form {
     padding: 55px 57px;
     font-weight: bold;
@@ -370,6 +374,7 @@ a.menu-link--current:active {
 .form-input input {
     width: 100%;
     position: relative;
+    box-sizing: border-box;
     padding: 5px 40px 5px 15px;
     border: none;
     background-color: #f2f2f2;
