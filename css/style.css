@@ -311,6 +311,7 @@ a.menu-link--current:active {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #766357;
+    cursor: pointer;
 }
 
 .map {
@@ -350,12 +351,6 @@ a.menu-link--current:active {
     clear: both;
 }
 
-.form-block--half {
-    padding: 0;
-    margin: 0;
-    width: 50%;
-}
-
 .form-label {
     width: 110px;
     float: left;
@@ -375,8 +370,8 @@ a.menu-link--current:active {
     width: 100%;
     position: relative;
     box-sizing: border-box;
-    padding: 5px 40px 5px 15px;
-    border: none;
+    padding: 3px 35px 4px 13px;
+    border: 2px solid transparent;
     background-color: #f2f2f2;
     font-family: "PT Sans", "Arial", serif;
     font-size: 14px;
@@ -387,6 +382,7 @@ a.menu-link--current:active {
 
 .form-input input[type="text"]:hover {
     background-color: #ebebeb;
+    border: 2px solid #e5e5e5;
 }
 
 .form-input input[type="text"]:focus {
@@ -395,9 +391,22 @@ a.menu-link--current:active {
     border: 2px solid #e5e5e5;
 }
 
+.form-block--half {
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-right: -4px;
+}
+
+.form-block--half:nth-child(2n) .form-label {
+    text-indent: 50px;
+}
+
 .form-block--half input {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
 
 }
 
@@ -411,15 +420,15 @@ a.menu-link--current:active {
 }
 
 .form-control--calendar {
-    background: url("../img/calendar.png") no-repeat 50% 50%;
+    background: url("../img/calendar.png") no-repeat center;
 }
 
 .form-control--calendar:hover {
-    background: url("../img/calendar-hvr.png") no-repeat 50% 50%;
+    background: url("../img/calendar-hvr.png") no-repeat center;
 }
 
 .form-control--calendar:active {
-    background: url("../img/calendar-dwn.png") no-repeat 50% 50%;
+    background: url("../img/calendar-dwn.png") no-repeat center;
 }
 .form-control--minus {
     position: absolute;
@@ -427,28 +436,28 @@ a.menu-link--current:active {
     left: 0;
     width: 35px;
     height: 35px;
-    background: url("../img/minus.png") no-repeat 50% 50%;
+    background: url("../img/minus.png") no-repeat center;
     z-index: 2;
 }
 
 .form-control--minus:hover {
-     background: url("../img/minus-hvr.png") no-repeat 50% 50%;
+     background: url("../img/minus-hvr.png") no-repeat center;
 }
 
 .form-control--minus:active {
-     background: url("../img/minus-dwn.png") no-repeat 50% 50%;
+     background: url("../img/minus-dwn.png") no-repeat center;
 }
 
 .form-control--plus {
-    background: url("../img/plus.png") no-repeat 50% 50%;
+    background: url("../img/plus.png") no-repeat center;
 }
 
 .form-control--plus:hover {
-    background: url("../img/plus-hvr.png") no-repeat 50% 50%;
+    background: url("../img/plus-hvr.png") no-repeat center;
 }
 
 .form-control--plus:active {
-    background: url("../img/plus-dwn.png") no-repeat 50% 50%;
+    background: url("../img/plus-dwn.png") no-repeat center;
 }
 
 .filter-btn {
@@ -462,6 +471,7 @@ a.menu-link--current:active {
     line-height: 26px;
     text-transform: uppercase;
     background-color: #81b3d2;
+    cursor:pointer
 }
 
 .filter-btn:hover {
@@ -593,6 +603,11 @@ a.copyright-image:active {
     margin-top: 0;
     margin-bottom: 20px;
 }
+
+.hotel-search label {
+    cursor: pointer;
+}
+
 .search-infrastructure {
     width: 255px;
     display: flex;
@@ -762,6 +777,7 @@ input[type="checkbox"] + label {
     line-height: 21px;
     text-transform: uppercase;
     background: none;
+    cursor: pointer;
 }
 
 .btn-transparent:hover {
@@ -903,16 +919,16 @@ a.arrow-active {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.result-block {
-    width: 530px;
-    display: flex;
-    justify-content: flex-start;
-}
 
 .result-img {
+    max-width: 100%;
     padding: 0;
     margin: 0;
     margin-right: 30px;
+}
+
+.result-info {
+    width: 530px;
 }
 
 a.result-name {
@@ -970,6 +986,7 @@ a.result-more-btn:active {
     padding: 5px 17px;
     border: none;
     background-color: #766357;
+    cursor: pointer;
 }
 
 a.result-order-btn {
