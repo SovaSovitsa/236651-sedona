@@ -322,6 +322,10 @@ p.features-description {
     background: url('../img/map.jpg') no-repeat center bottom;
 }
 
+.map iframe {
+    width: 100%;
+    min-height: 473px;
+}
 @keyframes formdown {
     0%  { transform: translateY(-100%);}          
     100% {transform: translateY(0%);}       
@@ -937,6 +941,7 @@ a.arrow-active {
 }
 
 .result-img {
+    width: 135px;
     padding: 0;
     margin: 0;
     margin-right: 30px;
