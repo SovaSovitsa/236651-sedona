@@ -247,7 +247,6 @@ a.menu-link--current:active {
     min-height: 256px;
     display: flex;
     flex-direction: row;
-    align-content: center;
     justify-content: space-between;
     margin: 0;
     padding-top: 0;
