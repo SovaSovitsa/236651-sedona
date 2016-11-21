@@ -121,7 +121,6 @@ a.menu-link--current:active {
     margin: auto;
 }
 
-
 .features-head {
     width: 575px;
     margin-top: 0;
@@ -148,7 +147,6 @@ a.menu-link--current:active {
     line-height: 0;
     background-color: #81b3d2;
 }
-
 
 .features-text {
     width: 33.33%;
@@ -184,7 +182,6 @@ a.menu-link--current:active {
     flex-direction: row-reverse;
 }
 
-
 .advice {
     display: flex;
     justify-content: space-between;
@@ -217,6 +214,7 @@ a.menu-link--current:active {
     left: 157px;
     background: url("../img/house-icon.png") no-repeat center;
 }
+
 .advice-item--hamburger::before {
     content: "";
     display: block;
@@ -266,15 +264,19 @@ a.menu-link--current:active {
     line-height: 26px;
     display: flex;
     padding: 0;
+    margin-top: -15px;
     flex-direction: column;
     justify-content: center;
+}
+
+p.features-description {
+    line-height: 20px;
 }
 
 .features-bottom .features-description {
     padding-left: 60px;
     padding-right: 60px;
 }
-
 
 .search-text {
     width: 575px;
@@ -320,7 +322,13 @@ a.menu-link--current:active {
     background: url('../img/map.jpg') no-repeat center bottom;
 }
 
+@keyframes formdown {
+    0%  { transform: translateY(-100%);}          
+    100% {transform: translateY(0%);}       
+}
+
 .search-container {
+    display: none;
     position: absolute;
     left: 315px;
     width: 570px;
@@ -328,10 +336,14 @@ a.menu-link--current:active {
     padding: 0;
     background-color: #ffffff;
     box-shadow: -7px 7px 15px 0 rgba(0, 0, 0, 0.15);
+
 }
 
-.search-modal {
-    display: none;
+.form-show {
+    animation: formdown 0.4s;
+    display: block;
+
+
 }
 
 .search-form {
@@ -340,10 +352,15 @@ a.menu-link--current:active {
     line-height: 26px;
 }
 
+
+
+
 .form-block {
     margin-bottom: 28px;
     height: 40px;
 }
+
+
 
 .form-block::after {
     content: "";
@@ -391,6 +408,16 @@ a.menu-link--current:active {
     border: 2px solid #e5e5e5;
 }
 
+::-webkit-input-placeholder {color:#000000;}
+::-moz-placeholder          {color:#000000;}
+:-moz-placeholder           {color:#000000;}
+:-ms-input-placeholder      {color:#000000;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
 .form-block--half {
     display: inline-block;
     width: 50%;
@@ -407,7 +434,6 @@ a.menu-link--current:active {
     padding-left: 35px;
     padding-right: 35px;
     text-align: center;
-
 }
 
 .form-control {
@@ -430,6 +456,7 @@ a.menu-link--current:active {
 .form-control--calendar:active {
     background: url("../img/calendar-dwn.png") no-repeat center;
 }
+
 .form-control--minus {
     position: absolute;
     top: 0;
@@ -463,7 +490,7 @@ a.menu-link--current:active {
 .filter-btn {
     width: 457px;
     padding: 16px 0;
-    margin: 43px auto 0 auto;
+    margin: 45px auto 0 auto;
     border: none;
     color: #ffffff;
     font-size: 21px;
@@ -523,7 +550,6 @@ a.menu-link--current:active {
     background-color: #669ec0;
 }
 
-
 .social-tw {
     background: #81b3d2 url("../img/twitter.png") no-repeat center;
 }
@@ -573,11 +599,7 @@ a.copyright-image:active {
      background: #ffffff url("../img/copyright-dwn.png") center no-repeat;
 }
 
-
-
-
 /*внутренняя страница*/
-
 .result-content {
     display: flex;
     flex-direction: column;
@@ -590,6 +612,7 @@ a.copyright-image:active {
     padding-bottom: 0;
     background: url("../img/inner-bg.jpg") no-repeat 0 -55px;
 }
+
 /*форма поиска*/
  .hotel-search {
     color: #ffffff;
@@ -619,7 +642,6 @@ a.copyright-image:active {
     display: flex;
     flex-direction: column;
 }
-
 
 input[type="checkbox"] {
     display: none;
@@ -670,16 +692,16 @@ input[type="checkbox"] + label {
 .search-price {
     margin-left: auto;
     width: 318px;
-
 }
 
 .search-price-title {
     font-size: 16px;
     line-height: 21px;
     margin-bottom: 11px;
+    margin-left: -10px;
     font-weight: bold;
-
 }
+
 /*поля со значениями*/
 .range-control {
     position: relative;
@@ -765,11 +787,10 @@ input[type="checkbox"] + label {
 }
 
 /*прозрачная кнопка*/
-
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 5px 33px;
+    padding: 5px 34px;
     border: 2px solid #ffffff;
     color: inherit;
     font-family: inherit;
@@ -784,7 +805,6 @@ input[type="checkbox"] + label {
     color: #000000;
     background-color: #ffffff;
 }
-
 
 /*результаты поиска*/
 .result-sorting {
@@ -801,8 +821,8 @@ input[type="checkbox"] + label {
 .sorting {
     display: flex;
     align-items: center;
-    
 }
+
 .sorting-title {
     margin-left: 47px;
     font-size: 12px;
@@ -817,7 +837,6 @@ a.sorting-option {
     line-height: 18px;
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
-
 }
 
 a.sorting-option:hover {
@@ -839,8 +858,7 @@ a.sorting-option--current {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
-    line-height: 26px;
-    
+    line-height: 26px;  
 }
 
 .sorting-dir {
@@ -886,8 +904,7 @@ a.arrow-link {
 a.arrow-link:hover {
     border-color: #000000;
     border-right-color: transparent;
-    border-left-color: transparent;
-    
+    border-left-color: transparent; 
 }
 
 a.arrow-link:active {
@@ -919,19 +936,19 @@ a.arrow-active {
     border-bottom: 1px solid #e5e5e5;
 }
 
-
 .result-img {
-    max-width: 100%;
     padding: 0;
     margin: 0;
     margin-right: 30px;
 }
 
-.result-info {
-    width: 530px;
+.result-img img {
+    max-width: 100%;
+    height: auto;
 }
 
 a.result-name {
+    display: block;
     color: #000000;
     font-family: "PT Sans", "Arial", serif;
     font-size: 21px;
@@ -942,11 +959,9 @@ a.result-name {
     margin-bottom: 5px;
 }
 
-
 a.result-name:hover {
     color: #81b3d2;
 }
-
 
 a.result-name:active {
     color: #cacaca;
@@ -1007,6 +1022,8 @@ a.result-order-btn:active {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    width: 120px;
+    text-align: right;
     
 }
 
@@ -1026,11 +1043,8 @@ a.result-order-btn:active {
     width: 73px;
 }
 
-
 .result-rating-text {
-    display: block;
-    width: 83px;
-    height: 26px;
-    padding: 0 13px;;
+    display: inline-block;
+    padding: 0 13px;
     background-color: #f2f2f2;
 }
