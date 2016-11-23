@@ -350,6 +350,7 @@ a.search-btn:hover {
     width: 100%;
     min-height: 473px;
 }
+
 @-webkit-keyframes formdown {
     0%  { -webkit-transform: translateY(-100%); transform: translateY(-100%);}          
     100% {-webkit-transform: translateY(0%);transform: translateY(0%);}       
@@ -411,6 +412,7 @@ a.search-btn:hover {
 
 .form-input input {
     width: 100%;
+	height: 36px;
     position: relative;
     box-sizing: border-box;
     padding: 3px 35px 4px 13px;
